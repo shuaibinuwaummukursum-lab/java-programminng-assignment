@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 4 Exercise - Form</title>
+</head>
+<body>
+
+<h2 style="text-align: center;">Personal <span style="color: green;">Details</span> Form</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend><span style="color: green;"><b>Personal Details</b></span></legend>
+
+        Full Name:
+        <input type="text" name="fullname" maxlength="30"><br><br>
+
+        Email:
+        <input type="email" name="email" placeholder="@mail.com"><br><br>
+
+        Password:
+        <input type="password" name="password"><br><br>
+
+        <input type="hidden" name="studentID" value="12345">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><span style="color: green;"><b>Gender & Preferences</b></span></legend>
+
+        Gender:<br>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other" checked> Other<br><br>
+
+        Preferred Courses:<br>
+        <input type="checkbox" name="course" value="HTML"> HTML<br>
+        <input type="checkbox" name="course" value="CSS"> CSS<br>
+        <input type="checkbox" name="course" value="JavaScript"> JavaScript<br>
+        <input type="checkbox" name="course" value="Python"> Python<br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><span style="color: green;"><b>Location & Skills</b></span></legend>
+
+        Country:
+        <select name="country">
+            <option>Nigeria</option>
+            <option>Ghana</option>
+            <option>UK</option>
+        </select>
+
+        <br><br>
+
+        Skills:
+        <select name="skills" multiple>
+            <option selected>HTML</option>
+            <option selected>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><span style="color: green;"><b>Message & Upload</b></span></legend>
+
+        Message:<br>
+        <textarea rows="5" cols="40"></textarea><br><br>
+
+        Upload File:
+        <input type="file" name="file"><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><span style="color: green;"><b>Buttons</b></span></legend>
+
+        <button type="button" onclick="alert('Form is ready!')">
+            Click Me
+        </button>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+        <br><br>
+
+        
+        <input type="image" 
+               src="./WhatsApp Image 2026-03-29 at 12.14.47 (1).jpeg" 
+               alt="Submit"
+               width="100" 
+               height="100">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
